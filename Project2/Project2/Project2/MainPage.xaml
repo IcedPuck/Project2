@@ -8,23 +8,44 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Notes" 
-           HorizontalOptions="Center"
-           FontAttributes="Bold" />
-        <Editor x:Name="editer"
+        <!--<Editor x:Name="editer"
                 Placeholder="Enter your note"
-                HeightRequest="100"/>
-        <Grid>
+                HeightRequest="100"/>-->
+        <Grid HorizontalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Back"
+                    Clicked="OnBackClicked"/>
+        </Grid>
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Task 1</x:String>
+                    <x:String>Task 2</x:String>
+                    <x:String>Task 3</x:String>
+                    <x:String>Task 4</x:String>
+                    <x:String>Task 5</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+        <Grid VerticalOptions="EndAndExpand">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Text="Save"
-                    Clicked="OnSaveButtonClicked"/>
+            <Button Text="HomePage"
+                    Clicked="OnHomeClicked"/>
             <Button Grid.Column="1"
-                    Text="Delete"
-                    Clicked="OnDeleteButtonClicked"/>
+                    Text="AddTask"
+                    Clicked="OnAddTaskClicked"/>
+            <Button Grid.Column="2"
+                    Text="Customer"
+                    Clicked="OnCustomerClicked"/>
         </Grid>
+        <MenuItem.Accelerator/>
     </StackLayout>
 
 </ContentPage>
