@@ -8,9 +8,6 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <!--<Editor x:Name="editer"
-                Placeholder="Enter your note"
-                HeightRequest="100"/>-->
         <Grid HorizontalOptions="Start">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.2*"/>
@@ -19,7 +16,9 @@
             <Button Text="Back"
                     Clicked="OnBackClicked"/>
         </Grid>
-        <ListView>
+        <ListView ItemsSource="{Binding Tasks}"
+                  ItemSelected="OnListViewItemSelected"
+                  ItemTapped="OnListViewItemTapped">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Task 1</x:String>
@@ -37,13 +36,13 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Text="HomePage"
-                    Clicked="OnHomeClicked"/>
+                    Clicked="OnHomePageClicked"/>
             <Button Grid.Column="1"
                     Text="AddTask"
-                    Clicked="OnAddTaskClicked"/>
+                    Clicked="OnAddTaskPageClicked"/>
             <Button Grid.Column="2"
                     Text="Customer"
-                    Clicked="OnCustomerClicked"/>
+                    Clicked="OnCustomerPageClicked"/>
         </Grid>
         <MenuItem.Accelerator/>
     </StackLayout>

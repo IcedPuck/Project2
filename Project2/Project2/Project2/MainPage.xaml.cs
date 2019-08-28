@@ -1,39 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
-using System.IO;
 
 namespace Project2
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "notes.txt");
+        public IList<Task> Tasks { get; private set; }
         public MainPage()
         {
             InitializeComponent();
-            if(File.Exists(_fileName))
+            Tasks = new List<Task>();
+            Tasks.Add(new Task
             {
-                editer.Text = File.ReadAllText(_fileName);
-            }
-        }
-        void OnSaveButtonClicked(object sender, EventArgs e)
-        {
-            File.WriteAllText(_fileName, editer.Text);
-        }
-        void OnDeleteButtonClicked(object sender, EventArgs e)
-        {
-            if(File.Exists(_fileName))
+                Name = "Task 1",
+                Location = "Australia",
+                Customer = "Chris"
+            });
+            Tasks.Add(new Task
             {
-                File.Delete(_fileName);
-            }
-            editer.Text = string.Empty;
+                Name = "Task 2",
+                Location = "Japan",
+                Customer = "Frank"
+            });
+            Tasks.Add(new Task
+            {
+                Name = "Task 3",
+                Location = "Australia",
+                Customer = "Ocean"
+            });
+            Tasks.Add(new Task
+            {
+                Name = "Task 4",
+                Location = "China",
+                Customer = "Mark"
+            });
+            Tasks.Add(new Task
+            {
+                Name = "Task 5",
+                Location = "Britain",
+                Customer = "Arthur"
+            });
+            BindingContext = this;
+        }
+        void OnHomePageClicked(object sender, EventArgs e)
+        {
+        }
+        void OnAddTaskPageClicked(object sender, EventArgs e)
+        {
+        }
+        void OnCustomerPageClicked(object sender, EventArgs e)
+        {
+        }
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
         }
     }
 }
