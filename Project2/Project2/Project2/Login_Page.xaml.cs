@@ -21,5 +21,10 @@ namespace Project2
         {
 
         }
+
+        private void Rregistered(object sender, EventArgs e)
+        {
+
+        }
     }
 }

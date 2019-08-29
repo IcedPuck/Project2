@@ -16,6 +16,14 @@
             <Button Text="Back"
                     Clicked="OnBackClicked"/>
         </Grid>
+        <SearchBar Placeholder="Search item..."
+                   CancelButtonColor="Black"
+                   PlaceholderColor="Black"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   FontAttributes="Italic"
+                   TextChanged="SearchBarTextChanged"/>
         <ListView ItemsSource="{Binding Tasks}"
                   HasUnevenRows="True"
                   ItemSelected="ListViewItemSelected"

@@ -6,3 +6,4 @@ E:\Study\SIT313\Project2\Project2\Project2\Project2\Project2\obj\Debug\netstanda
 E:\Study\SIT313\Project2\Project2\Project2\Project2\Project2\obj\Debug\netstandard2.0\Project2.csproj.CoreCompileInputs.cache
 E:\Study\SIT313\Project2\Project2\Project2\Project2\Project2\obj\Debug\netstandard2.0\Project2.AssemblyInfoInputs.cache
 E:\Study\SIT313\Project2\Project2\Project2\Project2\Project2\obj\Debug\netstandard2.0\Project2.AssemblyInfo.cs
+E:\Study\SIT313\Project2\Project2\Project2\Project2\Project2\obj\Debug\netstandard2.0\Login_Page.xaml.g.cs

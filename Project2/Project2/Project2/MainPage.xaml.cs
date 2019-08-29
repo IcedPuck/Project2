@@ -61,9 +61,9 @@ namespace Project2
         {
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void SearchBarTextChanged(object sender, TextChangedEventArgs e)
         {
-
+            SearchBar searchBar = (SearchBar)sender;
         }
     }
 }

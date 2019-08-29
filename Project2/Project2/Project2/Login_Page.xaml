@@ -14,7 +14,7 @@
                    FontSize="40"
                    TextColor="Black"/>
             <Grid VerticalOptions="Center"
-                  Padding="20">
+                  Padding="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.2*"/>
                     <ColumnDefinition Width="*"/>
@@ -25,7 +25,7 @@
                         TextColor="Gray"/>
             </Grid>
             <Grid VerticalOptions="Center"
-                  Padding="20">
+                  Padding="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.2*"/>
                     <ColumnDefinition Width="*"/>
@@ -39,11 +39,15 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.2*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
                 <Button Text="Login"
                         Grid.Column="1"
                         Clicked="LoginClicked"/>
+                <Button Text="Rregistered"
+                        Grid.Column="2"
+                        Clicked="Rregistered"/>
             </Grid>
       </StackLayout>
   </ContentView.Content>
