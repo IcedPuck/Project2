@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Project2.Login_Page"
+             BackgroundColor="Bisque">
+  <ContentView.Content>
+      <StackLayout VerticalOptions="Center"
+                   HorizontalOptions="Center">
+            <Label Text="Login Page"
+                   HorizontalOptions="Center"
+                   FontSize="40"
+                   TextColor="Black"/>
+            <Grid VerticalOptions="Center"
+                  Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Editor Grid.Column="1"
+                        Text="UserName"
+                        TextColor="Gray"/>
+            </Grid>
+            <Grid VerticalOptions="Center"
+                  Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Editor Grid.Column="1"
+                        Text="PassWord"
+                        TextColor="Gray"/>
+            </Grid>
+            <Grid VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Login"
+                        Grid.Column="1"
+                        Clicked="LoginClicked"/>
+            </Grid>
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>

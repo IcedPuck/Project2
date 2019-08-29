@@ -43,6 +43,14 @@ namespace Project2
             });
             BindingContext = this;
         }
+        void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Task selectedItem = e.SelectedItem as Task;
+        }
+        void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            Task TappedItem = e.Item as Task;
+        }
         void OnHomePageClicked(object sender, EventArgs e)
         {
         }

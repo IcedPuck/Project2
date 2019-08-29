@@ -17,17 +17,34 @@
                     Clicked="OnBackClicked"/>
         </Grid>
         <ListView ItemsSource="{Binding Tasks}"
-                  ItemSelected="OnListViewItemSelected"
+                  HasUnevenRows="True"
+                  ItemSelected="ListViewItemSelected"
                   ItemTapped="OnListViewItemTapped">
-            <ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Task 1</x:String>
-                    <x:String>Task 2</x:String>
-                    <x:String>Task 3</x:String>
-                    <x:String>Task 4</x:String>
-                    <x:String>Task 5</x:String>
-                </x:Array>
-            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   VerticalOptions="Start"/>
+                            <Label Grid.Column="2"
+                                   Text="{Binding Location}"
+                                   VerticalOptions="End"/>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Customer}"
+                                   VerticalOptions="StartAndExpand"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
         <Grid VerticalOptions="EndAndExpand">
             <Grid.ColumnDefinitions>
