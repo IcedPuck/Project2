@@ -22,7 +22,7 @@ namespace Project2
 
         }
 
-        private void Rregistered(object sender, EventArgs e)
+        private void Rrgister(object sender, EventArgs e)
         {
 
         }

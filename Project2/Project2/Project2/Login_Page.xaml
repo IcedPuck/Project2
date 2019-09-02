@@ -6,49 +6,65 @@
              mc:Ignorable="d"
              x:Class="Project2.Login_Page"
              BackgroundColor="Bisque">
-  <ContentView.Content>
-      <StackLayout VerticalOptions="Center"
-                   HorizontalOptions="Center">
-            <Label Text="Login Page"
+    <ContentView.Content>
+        <StackLayout VerticalOptions="Start"
+                    HorizontalOptions="Center">
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="Login Page"
                    HorizontalOptions="Center"
                    FontSize="40"
-                   TextColor="Black"/>
-            <Grid VerticalOptions="Center"
-                  Padding="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.2*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="0.2*"/>
-                </Grid.ColumnDefinitions>
-                <Editor Grid.Column="1"
+                   TextColor="Black"
+                   Grid.Row="1"/>
+                <Grid VerticalOptions="Center"
+                  Padding="10"
+                      Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Editor Grid.Column="1"
                         Text="UserName"
                         TextColor="Gray"/>
-            </Grid>
-            <Grid VerticalOptions="Center"
-                  Padding="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.2*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="0.2*"/>
-                </Grid.ColumnDefinitions>
-                <Editor Grid.Column="1"
+                </Grid>
+                <Grid VerticalOptions="Center"
+                  Padding="10"
+                      Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Editor Grid.Column="1"
                         Text="PassWord"
                         TextColor="Gray"/>
-            </Grid>
-            <Grid VerticalOptions="Center">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.2*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="0.2*"/>
-                </Grid.ColumnDefinitions>
-                <Button Text="Login"
+                </Grid>
+                <Grid VerticalOptions="Center"
+                      Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Login"
                         Grid.Column="1"
                         Clicked="LoginClicked"/>
-                <Button Text="Rregistered"
+                    <Button Text="Rrgister"
                         Grid.Column="2"
-                        Clicked="Rregistered"/>
+                        Clicked="Rrgister"/>
+                </Grid>
             </Grid>
-      </StackLayout>
-  </ContentView.Content>
+        </StackLayout>
+    </ContentView.Content>
 </ContentView>
