@@ -15,6 +15,22 @@ namespace Project_2
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            //Switch screen
+            var Customer = FindViewById<Button>(Resource.Id.Customer);
+            var Add = FindViewById<Button>(Resource.Id.Add);
+            var Home = FindViewById<Button>(Resource.Id.Home);
+            Customer.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(CustomerPageActivity));
+            };
+            Add.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(PublishActivity));
+            };
+            Home.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(MainActivity));
+            };
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
