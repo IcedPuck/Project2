@@ -20,6 +20,12 @@ namespace Project_2
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            var CustomerDetailPageBack = FindViewById<Button>(Resource.Id.CustomerDetailBack);
+            var CustomerDetailPageSave = FindViewById<Button>(Resource.Id.CustomerDetailSave);
+            CustomerDetailPageBack.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(CustomerPageActivity));
+            };
         }
     }
 }

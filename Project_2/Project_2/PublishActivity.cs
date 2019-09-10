@@ -20,6 +20,11 @@ namespace Project_2
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            var Back = FindViewById<Button>(Resource.Id.Back);
+            Back.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(MainActivity));
+            };
         }
     }
 }

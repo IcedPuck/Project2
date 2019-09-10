@@ -20,6 +20,11 @@ namespace Project_2
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            var PasswordBack = FindViewById<Button>(Resource.Id.PasswordBack);
+            PasswordBack.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(CustomerPageActivity));
+            };
         }
     }
 }
