@@ -64,6 +64,7 @@
     <Compile Include="CustomerPageActivity.cs" />
     <Compile Include="LoginPageActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainActivityDatabase.cs" />
     <Compile Include="PasswordPageActivity.cs" />
     <Compile Include="PublishActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
