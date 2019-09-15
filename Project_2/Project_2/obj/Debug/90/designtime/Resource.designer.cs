@@ -4148,7 +4148,7 @@ namespace Project_2
 			public const int PasswordPage = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int Publish = 2131427385;
+			public const int publish = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
 			public const int select_dialog_item_material = 2131427386;
