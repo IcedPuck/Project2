@@ -136,7 +136,5 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:id="@id/PublishSubmit"
-        
-    />
+        android:id="@id/PublishSubmit"/>
 </LinearLayout>

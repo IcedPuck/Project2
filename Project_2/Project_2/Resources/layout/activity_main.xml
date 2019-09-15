@@ -18,13 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="420dp"
-        >
+        android:layout_marginTop="420dp">
         <Button
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/home"
-            android:id="@id/Home"/>
+            android:id="@id/HomeButton"/>
         <Button
             android:layout_width="80dp"
             android:layout_height="80dp"

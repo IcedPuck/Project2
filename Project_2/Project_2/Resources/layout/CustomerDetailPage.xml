@@ -98,3 +98,4 @@
         android:textStyle="bold"
         android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
     android:id="@+id/CustomerDetailSave"/>
+  </LinearLayout>

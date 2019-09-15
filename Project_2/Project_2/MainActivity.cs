@@ -18,7 +18,7 @@ namespace Project_2
             //Switch screen
             var Customer = FindViewById<Button>(Resource.Id.Customer);
             var Add = FindViewById<Button>(Resource.Id.Add);
-            var Home = FindViewById<Button>(Resource.Id.Home);
+            var Home = FindViewById<Button>(Resource.Id.HomeButton);
             Customer.Click += (object sender, System.EventArgs e) =>
             {
                 this.StartActivity(typeof(CustomerPageActivity));

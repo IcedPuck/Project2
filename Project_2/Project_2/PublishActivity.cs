@@ -25,6 +25,7 @@ namespace Project_2
             {
                 this.StartActivity(typeof(MainActivity));
             };
+            var PublishSubmit = FindViewById<Button>(Resource.Id.PublishSubmit);
         }
     }
 }
