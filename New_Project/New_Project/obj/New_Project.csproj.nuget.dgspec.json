@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\University\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {}
+    "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {}
   },
   "projects": {
-    "E:\\Study\\University\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {
+    "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\University\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
+        "projectUniqueName": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
         "projectName": "New_Project",
-        "projectPath": "E:\\Study\\University\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
-        "packagesPath": "C:\\Users\\pass\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\University\\SIT313\\Project2\\New_Project\\New_Project\\obj\\",
+        "projectPath": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
+        "packagesPath": "C:\\Users\\Jake-y\\.nuget\\packages\\",
+        "outputPath": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\pass\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jake-y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
