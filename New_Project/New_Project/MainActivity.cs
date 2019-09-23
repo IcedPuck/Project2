@@ -1,8 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
 using Android.Runtime;
-using Android.Widget;
+using Android.Support.V7.App;
 
 namespace New_Project
 {
@@ -19,6 +18,11 @@ namespace New_Project
             Login.Click += (object sender, System.EventArgs e) =>
             {
                 this.StartActivity(typeof(HomeActivity));
+            };
+             var Reg = FindViewById(Resource.Id.Reg);
+             Reg.Click += (object sender, System.EventArgs e) =>
+            {
+                this.StartActivity(typeof(RegisterActivity));
             };
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {}
+    "E:\\New_Project\\New_Project\\New_Project.csproj": {}
   },
   "projects": {
-    "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj": {
+    "E:\\New_Project\\New_Project\\New_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
+        "projectUniqueName": "E:\\New_Project\\New_Project\\New_Project.csproj",
         "projectName": "New_Project",
-        "projectPath": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\New_Project.csproj",
+        "projectPath": "E:\\New_Project\\New_Project\\New_Project.csproj",
         "packagesPath": "C:\\Users\\Jake-y\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\SIT313\\Project2\\New_Project\\New_Project\\obj\\",
+        "outputPath": "E:\\New_Project\\New_Project\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
